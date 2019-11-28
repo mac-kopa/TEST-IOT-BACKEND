@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WeatherMeasurementTestApi</name>
+    </assembly>
+    <members>
+        <member name="M:WeatherMeasurementTestApi.Controllers.MeasurementTestController.TestGetDeviceSpecificMeasurementsForDate(System.String,System.String,System.String)">
+            <summary>
+            Collect all of the measurements for one day, one sensor type, and one unit..
+            </summary>
+            <param name="device">Id of the device.</param>
+            <param name="sensortype">Type of sensor.</param>
+            <param name="date">Date of measurement.</param>
+            <response code="200">OK</response>
+            <response code="400">Bad request</response>
+            <response code="404">File not found or empty</response>
+            <returns></returns>
+        </member>
+        <member name="M:WeatherMeasurementTestApi.Controllers.MeasurementTestController.TestGetDeviceMeasurementsForDate(System.String,System.String)">
+            <summary>
+            Collect all data points for one unit and one day.
+            </summary>
+            <param name="device">Id of the device.</param>
+            <param name="date">Date of measurement.</param>
+            <response code="200">OK</response>
+            <response code="400">Bad request</response>
+            <response code="404">File not found or empty</response>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
